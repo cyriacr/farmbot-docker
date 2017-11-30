@@ -20,7 +20,10 @@ sed -i s/pgsql-dbname/$PGDBNAME/g config/database.yml
 cd /opt/Farmbot-Web-App
 
 RAILS_ENV=test
-rake db:create db:migrate db:seed
+if [ "$1" = "init" ]; then
+	rake db:create db:migrate db:seed
+fi
+
 rails api:start
 
 #rails server -p 3000 -b 0.0.0.0
