@@ -10,7 +10,7 @@ sudo docker run
 	-p "1883:1883" \
 	-p "8883:8883" \
 	-p "3002:15675" \
-	-e "PKAPIURL=$API_PUBLIC_KEY_PATH" \
+	-e "API_PUBLIC_KEY_PATH=$API_PUBLIC_KEY_PATH" \
 	-e "VHOST=$VHOST" \
 	--name "farmbot-mqtt" \
 	farmbot-mqtt \
