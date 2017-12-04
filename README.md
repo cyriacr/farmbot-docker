@@ -1,17 +1,17 @@
 # farmbot-docker
 
 
-##Please check runweb.sh and runmqtt.sh before execute them.##
+## Please check runweb.sh and runmqtt.sh before execute them. ##
 
 
-#SERVICES START SEQUENCE#
+# SERVICES START SEQUENCE #
 
 Start PostgreSQL first.
 Then runweb.sh
 Wait for 60-180 seconds, depanding on your CPU power.
 Run runmqtt.sh.
 
-#PostgreSQL#
+# PostgreSQL #
 
 For data preservation, PostgreSQL is not installed in both dockerfiles. 
 
