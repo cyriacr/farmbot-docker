@@ -25,7 +25,7 @@ sed -i s/pgsql-pass/$PGPASS/g config/database.yml
 sed -i s/pgsql-dbname/$PGDBNAME/g config/database.yml
 
 
-RAILS_ENV=test
+RAILS_ENV=development
 if [ "$1" = "init" ]; then
 	rake db:create db:migrate db:seed
 fi

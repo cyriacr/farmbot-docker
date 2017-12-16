@@ -16,7 +16,7 @@ RUN apt-get install -y libpq-dev # postgresql-contrib
 
 # Install FarmBot Web App
 WORKDIR /opt
-RUN git clone https://github.com/FarmBot/Farmbot-Web-App --depth=10
+RUN git clone https://github.com/FarmBot/Farmbot-Web-App -b master --depth=10
 
 WORKDIR /opt/Farmbot-Web-App
 RUN gem install bundler
